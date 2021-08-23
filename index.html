@@ -91,9 +91,9 @@
                         </button>
                     </li>
                     <li class="tools__item">
-                        <a class="btn btn--view-circle" href="#" target="_blank">
+                        <button class="btn btn--view-circle popup-open" href="#" data-popup-name="popup-status">
                             <div class="_icon-subtract"></div>
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -395,7 +395,7 @@
     </div>
     
 
-    
+    `
     
     <div id="popup-feedback" class="popup">
         <div class="popup__body">
@@ -428,7 +428,7 @@
                 <button class="popup__button-close btn btn--view-circle popup-close"></button>
                 <h3 class="popup__title">Заказать звонок</h3>
                 <fieldset class="popup__inputs">
-                    <input class="popup__input input" type="tel" name="form-feedback-[tel]" placeholder="Телефон">
+                    <input class="popup__input input" type="tel" name="feedback-[tel]" placeholder="Телефон">
                 </fieldset>
                 <p class="popup__agreement">
                     Нажимая “отправить”, вы даете согласие на
@@ -439,6 +439,28 @@
                 <button class="popup__button-submit btn" type="submit">отправить
                     <div class="popup__button-submit-icon _icon-arrow"></div>
                 </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="popup-status" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <button class="popup__button-close btn btn--view-circle popup-close"></button>
+                <h3 class="popup__title">Статус ремонта</h3>
+                <fieldset class="popup__inputs">
+                    <label>
+                        <p class="popup__label">Укажите имя и фамилию на которые были оформленны ремонтные услуги: </p>
+                        <input class="popup__input input" type="text" name="staus-[name]" placeholder="Имя фамилия">
+                    </label>
+                    <div class="popup__status">
+                        <div class="popup__status-item popup__status-item--active"></div>
+                        <div class="popup__status-item"></div>
+                        <div class="popup__status-item"></div>
+                        <div class="popup__status-item"></div>
+                    </div>
+                </fieldset>
             </div>
         </div>
     </div>
